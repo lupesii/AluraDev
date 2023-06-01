@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url(styles/cabecalho.css);
+
+:root{
+
+    --cor-fundo: #051D3B;
+    --cor-branco: #ffffff;
+    --cor-cinza: #2D415A;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-branco);
+    font-family: 'Inter', sans-serif;
+}

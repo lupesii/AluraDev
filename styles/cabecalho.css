@@ -1,0 +1,28 @@
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecalho__logo{
+    width: 10%;
+}
+
+.barra_pesquisa{
+    background-color: var(--cor-cinza);
+    border: none;
+    width: 50%;
+    height: 3rem;
+
+    border-radius: 8px;
+}
+
+.barra_pesquisa::placeholder{
+    padding-left: 1rem;
+}
+
+.cabecalho__usuario{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
