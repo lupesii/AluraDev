@@ -1,7 +1,9 @@
 .cabecalho{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-right:1.5rem;
 }
 
 .cabecalho__logo{
@@ -19,6 +21,7 @@
 
 .barra_pesquisa::placeholder{
     padding-left: 1rem;
+    color: var(--cor-branco);
 }
 
 .cabecalho__usuario{

@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 @import url(styles/cabecalho.css);
+@import url(styles/menu.css);
+@import url(styles/dados.css);
 
 :root{
 
     --cor-fundo: #051D3B;
     --cor-branco: #ffffff;
     --cor-cinza: #2D415A;
+    --cor-botao: #5081FB;
+
+    --font-padrao:'Inter', sans-serif;
 }
 
 body{
     background-color: var(--cor-fundo);
     color: var(--cor-branco);
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-padrao);
 }

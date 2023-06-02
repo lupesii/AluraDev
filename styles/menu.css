@@ -1,0 +1,20 @@
+.menu{
+    margin: 2.5rem 0 0 1rem;
+}
+
+.menu__titulo{
+    font: normal 400 1rem var(--font-padrao);
+}
+
+.menu__item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.item__link{
+    font: normal 400 1rem var(--font-padrao);
+    color: var(--cor-branco);
+    text-decoration: none;
+}
