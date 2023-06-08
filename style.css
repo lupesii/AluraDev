@@ -2,13 +2,24 @@
 @import url(styles/cabecalho.css);
 @import url(styles/menu.css);
 @import url(styles/dados.css);
+@import url(styles/campo__codigo.css);
 
 :root{
 
     --cor-fundo: #051D3B;
     --cor-branco: #ffffff;
+    --cor-preto: #000000;
     --cor-cinza: #2D415A;
+    --cor-cinza-hover: #41536A;
+
     --cor-botao: #5081FB;
+    --cor-botao-hover:#7BA4FC;
+    --cor-botao-focus: #96B9FD;
+
+    --cor-highlight: #6BD1FF;
+    --cor-botao-highlight: #0B254A;
+    --cor-botao-highlight-hover: #112D5A;
+    --cor-botao-highlight-focus: #173569;
 
     --font-padrao:'Inter', sans-serif;
 }
@@ -17,4 +28,11 @@ body{
     background-color: var(--cor-fundo);
     color: var(--cor-branco);
     font-family: var(--font-padrao);
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: center;
+    margin: 1rem;
 }

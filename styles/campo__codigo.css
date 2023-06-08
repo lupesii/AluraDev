@@ -1,0 +1,48 @@
+.codigo{
+    background-color: var(--cor-highlight);
+    border-radius: 8px;
+    box-shadow: 0 15px rgba(0, 0, 0, 0.24);
+
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 2% 10% 2%;
+
+}
+
+.input__codigo{
+
+    background-color: var(--cor-preto);
+    border: none;
+    border-radius: 8px;
+    color: var(--cor-branco);
+
+
+    position: absolute;
+    left: 40%;
+    top: 50%;
+}
+
+.botao__highlight{
+
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--cor-botao-highlight);
+    color: var(--cor-branco);
+
+    position: relative;
+    top: 105%;
+}
+
+.botao__highlight:hover{
+    background-color: var(--cor-botao-highlight-hover);
+}
+
+.botao__highlight:active{
+    border: 2px solid var(--cor-botao-highlight);
+}
+
+.botao__highlight:focus{
+    background-color: var(--cor-botao-highlight-focus);
+}

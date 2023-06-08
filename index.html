@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img class="cabecalho__logo" src="assets/logo.png" alt="Logo AllDev">
+        <img class="cabecalho__logo" src="assets/logo.svg" alt="Logo AllDev">
         <input type="search" class="barra_pesquisa" placeholder="Busque por algo">
         <div class="cabecalho__usuario">
             <img class="cabecalho__perfil" src="assets/Photo.svg" alt="Foto de perfil do usuário">
@@ -34,7 +34,25 @@
             </ul>
         </section>
 
-        
+        <section class="codigo">
+            <input type="text" class="input__codigo">
+            <button class="botao__highlight">Vizualizar com highlight</button>
+        </section>
+
+        <section class="dados">
+            <h3 class="dados__titulo">Seu Projeto</h3>
+            <input type="text" class="barra_pesquisa dados__nome" placeholder="Nome do seu projeto">
+            <input type="text" class="barra_pesquisa dados__descricao" placeholder="Descrição do seu projeto">
+
+            <h3 class="dados__titulo">Personalização</h3>
+            <select name="linguagem" class="barra_pesquisa dados__linguagem" >
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+            <input type="color" value="#6BD1FF" class="dados__cor">
+            <button class="dados__botao" type="submit">Salvar Projeto</button>
+        </section>
     </main>
 </body>
 </html>
