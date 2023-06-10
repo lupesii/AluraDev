@@ -2,11 +2,13 @@
     background-color: var(--cor-highlight);
     border-radius: 8px;
     box-shadow: 0 15px rgba(0, 0, 0, 0.24);
-
-    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    margin: 0 2% 10% 2%;
 
+    height: 80%;
 }
 
 .input__codigo{
@@ -15,11 +17,10 @@
     border: none;
     border-radius: 8px;
     color: var(--cor-branco);
-
-
-    position: absolute;
-    left: 40%;
-    top: 50%;
+    
+    margin: 1rem;
+    width: 90%;
+    height: 90%;
 }
 
 .botao__highlight{
@@ -31,7 +32,7 @@
     background-color: var(--cor-botao-highlight);
     color: var(--cor-branco);
 
-    position: relative;
+    position: absolute;
     top: 105%;
 }
 
