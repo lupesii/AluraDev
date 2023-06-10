@@ -11,16 +11,24 @@
     height: 80%;
 }
 
+.codigo__bola{
+    position: absolute;
+    top: 7%;
+    left: 7%;
+}
+
 .input__codigo{
 
     background-color: var(--cor-preto);
     border: none;
     border-radius: 8px;
     color: var(--cor-branco);
+    resize: none;
     
     margin: 1rem;
     width: 90%;
-    height: 90%;
+    height: 80%;
+    padding-top: 3rem;
 }
 
 .botao__highlight{
