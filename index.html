@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Alura Dev</title>
+</head>
+<body>
+    <header class="headerContainer">
+        <img src="assets/Logo.svg">
+        <div>
+            <img src="assets/Lupa.svg" id="openSearch">
+            <img src="assets/Menu.svg" id="buMenu">
+        </div>
+    </header>
+
+    <main class="mainContainer">
+        <nav class="menu" id="menu">   
+            <a href="#" class="menu_link">
+                <img src="assets/Icone-Editor.svg" alt="Editor de Código">
+                <p>Editor de código</p>
+            </a>
+        
+            <a href="pages/comunidade.html" class="menu_link">
+                <img src="assets/Icone-Comunidade.svg" alt="Comunidade">
+                <p>Comunidade</p>
+            </a>
+
+            <hr>
+                
+            <a class="menu_link" href="https://github.com/lupesii">
+                <img id="foto" src="assets/Photo.svg">
+                <label for="foto">Lucas</label>
+            </a>
+        </nav>
+
+        <div class="search-bar" id="searchBar">
+            <input type="search" placeholder="Busque por algo" clear="false">
+            <button class="close_button" id="closeSearch"><img src="assets/Close.svg"></button>
+        </div>
+
+        <section class="editor">
+            <div class="editorContainer">
+                <code class="code_editor" contenteditable="true" aria-label="editor"></code>
+                <div class="dots">
+                    <span class="dot dot--red"></span>
+                    <span class="dot dot--yellow"></span>
+                    <span class="dot dot--green"></span>
+                </div>
+            </div>
+            <button class="editor_button">Vizualizar com o highlight</button>
+        </section>
+
+        <aside class="projeto">
+            <div class="projeto_info">
+                <h1>SEU PROJETO</h1>
+                <input type="text" id="nomeProje" placeholder="Nome do seu projeto">
+                <textarea class="input" id="descProje" cols="30" rows="5" placeholder="Descrição do seu projeto"></textarea>
+            </div>
+
+            <div class="projeto_setting">
+                <h1>PERSONALIZAÇÃO</h1>
+                <select class="input" id="editorLanguage">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                </select>
+                <input type="color" id="editorColor" value="#6bd1ff">
+            </div>
+            <button class="editor_button save_button">Salvar Projeto</button>
+        </aside>
+    </main>
+
+    <script src="script/menu.js"></script>
+</body>
+</html>

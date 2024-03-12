@@ -1,0 +1,74 @@
+.editor{
+    margin-bottom: 2rem;
+}
+
+.editorContainer{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #6bd1ff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.code_editor{
+    background-color: black;
+    color: var(--branco);
+    font-family: var(--font-secundaria);
+    font-size: 0.6875rem;
+    font-weight: 400;
+    border: 0;
+    border-radius: calc(var(--border-radius) / 2);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    min-height: 400px;
+    padding: 3.5rem 0.75rem 0.75rem;
+    outline: none;
+    resize: none;
+    word-wrap: break-word;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+}
+
+.editor_button{
+    background-color: var(--cor-botao);
+    color: var(--branco);
+    font-family: var(--font-principal);
+    font-size: .85rem;
+    border: none;
+    border-radius: var(--border-radius);
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.dots{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    width: calc(100% - 3rem);
+}
+
+.dot{
+    background-color: white;
+    border-radius: 100%;
+    display: block;
+    height: 0.75rem;
+    margin-left: .5rem;
+    width: 0.75rem;
+}
+
+.dot--red{
+    background-color: var(--mac-red);
+}
+
+.dot--yellow{
+    background-color: var(--mac-yellow);
+}
+
+.dot--green{
+    background-color: var(--mac-green);
+}

@@ -1,0 +1,77 @@
+@import url(editor.css);
+@import url(projeto.css);
+@import url(menu.css);
+
+:root{
+    --branco: white;
+    --preto: black;
+    --fundo-cor: #051D3B;
+    --cinza: #2d415a;
+    --cor-botao: #5081FB14;
+    --cor-botao2: #5081FB;
+    --mac-red: #FF5F56;
+    --mac-yellow: #FFBD2E;
+    --mac-green: #27C93F;
+    --border-radius: 0.5rem;
+    --box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.24);
+
+    --font-principal: "Inter", sans-serif;
+    --font-secundaria: "Roboto Mono", monospace;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--fundo-cor);
+    font-family: var(--font-principal);
+    font-weight: 700;
+    color: var(--branco);
+}
+
+h1{
+    font: normal 400 0.75rem var(--font-principal);
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 1rem;
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.mainContainer{
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+input:not([type="color"]), .input{
+    background-color: var(--cinza);
+    color: var(--branco);
+    border: none;
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    resize: none;
+}
+
+input[type="color"]{
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    border-radius: calc(var(--border-radius) / 4);
+    padding: .5rem;
+    width: 100%;
+    height: 3.5rem;
+}

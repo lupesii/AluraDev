@@ -1,0 +1,12 @@
+.projeto_info, .projeto_setting{
+    margin-bottom: 2rem;
+}
+
+.projeto input:not([type="color"]), .projeto select{
+    margin-bottom: 1rem;
+}
+
+.save_button{
+    background-color: var(--cor-botao2);
+    color: var(--preto);
+}
