@@ -49,6 +49,10 @@ h1,h2,h3,h4,h5,h6{
     padding: 1rem;
 }
 
+.header_perfil, .header_search{
+    display: none;
+}
+
 .mainContainer{
     padding: 1rem;
     position: relative;
@@ -58,16 +62,41 @@ h1,h2,h3,h4,h5,h6{
 @media screen and (min-width:820px) {
 
     .header_search{
+        display: block;
         width: 65vw !important;
         margin: 0 .25rem;
     }
 
+    #iconSearch{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px)  {
+
     .header{
-        display: flex;
+        display: grid;
+        grid-template-columns: 20vw 50vw 20vw;
         justify-content: space-between;
     }
 
-    #iconSearch{
+    .header_icons{
         display: none;
+    }
+
+    .header_perfil{
+        justify-self: end;
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    .header_search{
+        width: 50vw !important;
+    }
+
+    .mainContainer{
+        display: grid;
+        grid-template-columns: 20vw 50vw 20vw;
+        justify-content: space-between;
     }
 }

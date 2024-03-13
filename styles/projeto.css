@@ -1,3 +1,7 @@
+.projeto input, .projeto select, .projeto .input{
+    width: 100%;
+}
+
 .projeto_info, .projeto_setting{
     margin-bottom: 2rem;
 }
@@ -12,7 +16,6 @@ input:not([type="color"]), .input{
     border: none;
     border-radius: var(--border-radius);
     font-family: inherit;
-    width: 100%;
     padding: 1rem;
     outline: none;
     resize: none;
@@ -36,7 +39,7 @@ input[type="color"]{
 @media screen and (min-width: 820px) {
 
     .projeto input[type="color"], .projeto select{
-        width: calc(50% - 0.5rem);
+        width: calc(50% - 0.5rem) !important;
         margin-bottom: 0;
     }
 
@@ -46,4 +49,22 @@ input[type="color"]{
         justify-content: center;
         gap: 10px;
     }
+}
+
+@media screen and (min-width:1024px) {
+
+    .projeto{
+        width: 20vw;
+    }
+
+    .setting{
+        display: block;
+    }
+
+    .projeto input[type="color"], .projeto select{
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+
+
 }

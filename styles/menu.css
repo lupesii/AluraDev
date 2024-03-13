@@ -66,3 +66,20 @@ hr{
     }
     
 }
+
+@media screen and (min-width: 1024px) {
+    .menu{
+        opacity: 1;
+        position: static;
+        animation: none;
+        width: 20vw;
+        padding: 0;
+
+        background-color: transparent;
+    }
+
+    hr, .menu_user {
+        display: none;
+    }
+    
+}
