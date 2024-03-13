@@ -1,4 +1,4 @@
-const openSearch = document.getElementById('openSearch');
+const openSearch = document.getElementById('iconSearch');
 const closeSearch = document.getElementById('closeSearch');
 const searchBar = document.getElementById('searchBar');
 

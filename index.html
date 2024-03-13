@@ -7,10 +7,11 @@
     <title>Alura Dev</title>
 </head>
 <body>
-    <header class="headerContainer">
+    <header class="header">
         <img src="assets/Logo.svg">
+        <input class="header_search" type="search" placeholder="Busque por algo" clear="false">
         <div>
-            <img src="assets/Lupa.svg" id="openSearch">
+            <img src="assets/Lupa.svg" id="iconSearch">
             <img src="assets/Menu.svg" id="buMenu">
         </div>
     </header>
@@ -29,7 +30,7 @@
 
             <hr>
                 
-            <a class="menu_link" href="https://github.com/lupesii">
+            <a target="_blank" class="menu_link" href="https://github.com/lupesii">
                 <img id="foto" src="assets/Photo.svg">
                 <label for="foto">Lucas</label>
             </a>
@@ -61,12 +62,14 @@
 
             <div class="projeto_setting">
                 <h1>PERSONALIZAÇÃO</h1>
-                <select class="input" id="editorLanguage">
-                    <option value="JavaScript">JavaScript</option>
-                    <option value="HTML">HTML</option>
-                    <option value="CSS">CSS</option>
-                </select>
-                <input type="color" id="editorColor" value="#6bd1ff">
+                <div class="setting">
+                    <select class="input" id="editorLanguage">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                    </select>
+                    <input type="color" id="editorColor" value="#6bd1ff">
+                </div>
             </div>
             <button class="editor_button save_button">Salvar Projeto</button>
         </aside>
