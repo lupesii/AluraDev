@@ -6,14 +6,16 @@ const buttonMenu = document.getElementById('buMenu');
 const menu = document.getElementById('menu');
 
 
-openSearch.onclick = function(){
-    searchBar.classList.add("is-visible");
-}
+// openSearch.onclick = function(){
+//     searchBar.classList.add("is-visible");
+// }
 
-closeSearch.onclick = function(){
-    searchBar.classList.remove("is-visible");
-}
+// closeSearch.onclick = function(){
+//     searchBar.classList.remove("is-visible");
+// }
+// COMENTEI PORQUE ESTAVA DANDO ERRO NA PÁGINA COMUNIDADE
 
 buttonMenu.onclick = function(){
     menu.classList.toggle("is-open");
 }
+
