@@ -49,7 +49,15 @@
     gap: 10px;
     margin-bottom: 1rem;
 }
+.btn-ativo:hover{
+    background-color: var(--cor-btn-ativo-hover);
+    border-radius: var(--border-radius);
+}
 
+.btn-inativo:hover{
+    background-color: var(--cor-btn-inativo-hover);
+    border-radius: var(--border-radius);
+}
 hr{
     margin-bottom: 1rem;
 }
