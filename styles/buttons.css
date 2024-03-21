@@ -1,0 +1,45 @@
+.button{
+    font-family: var(--font-principal);
+    font-size: .85rem;
+    border: var(--border-pressed) transparent;
+    border-radius: var(--border-radius);
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.editor_button{
+    background-color: rgba(var(--blue-rgba-300), 0.08);
+    color: var(--branco);
+}
+
+.editor_button:hover{
+    background-color: rgba(var(--blue-rgba-300), 0.16);
+}
+
+.editor_button:active{
+    background-color: rgba(var(--blue-rgba-300), 0.16);
+    border: var(--border-pressed) rgba(var(--blue-rgba-300), 0.24);
+}
+
+.editor_button:focus{
+    background-color: rgba(var(--blue-rgba-300), 0.24);
+}
+
+.save_button{
+    background-color: var(--blue-300);
+    color: var(--preto);
+}
+
+.save_button:hover{
+    background-color: var(--blue-200);
+}
+
+.save_button:active{
+    background-color: var(--blue-200);
+    border: var(--border-pressed) rgba(var(--blue-rgba-300), 0.72);
+}
+
+.save_button:focus{
+    background-color: var(--blue-100);
+}

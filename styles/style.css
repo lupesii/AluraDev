@@ -1,17 +1,30 @@
-@import url(editor.css);
-@import url(projeto.css);
-@import url(menu.css);
+@import url(editor.css); @import url(projeto.css); @import url(menu.css); @import url(buttons.css); @import url(input.css); @import url(icon.css);
 
 :root{
     --branco: white;
+    --branco-8: rgba(255, 255, 255, 0.08);
+    --branco-56:  rgba(255, 255, 255, 0.56);
+
     --preto: black;
     --fundo-cor: #051D3B;
     --cinza: #2d415a;
-    --cor-botao: #5081FB14;
-    --cor-botao2: #5081FB;
+
+    --blue-100: #96B9FD;
+    --blue-200: #7BA4FC;
+    --blue-300: #5081FB;
+
+    --blue-rgba-100: 150, 185, 253;
+    --blue-rgba-200: 123, 164, 252;
+    --blue-rgba-300: 80, 129, 251;
+    --blue-rgba-400: 5, 29, 59;
+
+    --white-rgba: 255, 255, 255;
+
     --mac-red: #FF5F56;
     --mac-yellow: #FFBD2E;
     --mac-green: #27C93F;
+
+    --border-pressed: 4px solid;
     --border-radius: 0.5rem;
     --box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.24);
 
@@ -49,8 +62,19 @@ h1,h2,h3,h4,h5,h6{
     padding: 1rem;
 }
 
+.header_perfil, .menu_user{
+    margin-bottom: 0;
+    color: var(--branco);
+    padding: 0 10px;
+    border-radius: var(--border-radius);
+}
+
 .header_perfil, .header_search{
     display: none;
+}
+
+.header_perfil:hover, .menu_user:hover{
+    background-color: var(--branco-8);
 }
 
 .mainContainer{
@@ -85,13 +109,13 @@ h1,h2,h3,h4,h5,h6{
     }
 
     .header_perfil{
-        justify-self: end;
         display: flex;
-        margin-bottom: 0;
+        justify-self: end;
     }
 
     .header_search{
         width: 50vw !important;
+        height: 60px;
     }
 
     .mainContainer{

@@ -15,7 +15,7 @@
             <img src="assets/Menu.svg" id="buMenu">
         </div>
         <a target="_blank" class="menu_link header_perfil" href="https://github.com/lupesii">
-            <img id="foto" src="assets/Photo.svg">
+            <img id="foto" src="assets/Photo.png">
             <label for="foto">Lucas</label>
         </a>
     </header>
@@ -23,20 +23,20 @@
     <main class="mainContainer">
         <nav class="menu" id="menu">
             <h1>MENU</h1>
-            <a href="#" class="menu_link">
-                <img src="assets/Icone-Editor.svg" alt="Editor de Código">
-                <p>Editor de código</p>
+            <a href="index.html" class="menu_link linked">
+                <img id="img-editor" class="icon_img --linked" src="assets/Icone-Editor.svg" alt="Editor de Código">
+                <label>Editor de código</label>
             </a>
         
-            <a href="pages/comunidade.html" class="menu_link">
-                <img src="assets/Icone-Comunidade.svg" alt="Comunidade">
-                <p>Comunidade</p>
+            <a href="pages/comunidade.html" class="menu_link notlinked">
+                <img id="img-comunidade" class="icon_img" src="assets/Icone-Comunidade.svg" alt="Comunidade">
+                <label>Comunidade</label>
             </a>
 
             <hr>
                 
             <a target="_blank" class="menu_link menu_user" href="https://github.com/lupesii">
-                <img id="foto" src="assets/Photo.svg">
+                <img id="foto" src="assets/Photo.png">
                 <label for="foto">Lucas</label>
             </a>
         </nav>
@@ -55,7 +55,7 @@
                     <span class="dot dot--green"></span>
                 </div>
             </div>
-            <button class="editor_button">Vizualizar com o highlight</button>
+            <button class="button editor_button">Vizualizar com o highlight</button>
         </section>
 
         <aside class="projeto">
@@ -76,10 +76,11 @@
                     <input type="color" id="editorColor" value="#6bd1ff">
                 </div>
             </div>
-            <button class="editor_button save_button">Salvar Projeto</button>
+            <button class=" save_button button">Salvar Projeto</button>
         </aside>
     </main>
 
+    
     <script src="script/menu.js"></script>
 </body>
 </html>

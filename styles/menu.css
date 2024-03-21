@@ -28,13 +28,18 @@
     width: 70vw;
     height: 70vh;
     padding: 1rem;
-    border-radius: var(--border-radius);
+    border-radius: calc(var(--border-radius) / 2);
     position: absolute;
     right: -100%;
     top: 0;
     z-index: 1;
     transition: right 0.7s ease-in-out;
     animation: opacityDown 0.7s ease-in-out;
+
+}
+
+#foto{
+    width: 48px;
 
 }
 
@@ -45,13 +50,41 @@
 
 .menu_link{
     font-family: var(--font-principal);
+    font-weight: normal;
+    color: var(--branco-56);
+    font-size: 1.1rem;
     text-decoration: none;
-    color: var(--branco);
 
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 1rem;
+}
+
+.icon_img{
+    padding: 10px;
+    border-radius: calc(var(--border-radius)*2);
+    background-color: rgba(var(--blue-rgba-300), 0.16);
+}
+
+.linked > .icon_img{
+    background-color: rgba(var(--blue-rgba-300), 1);
+}
+
+.linked > label{
+    color: var(--branco);
+}
+
+.menu_link > label:hover + .icon_img{
+    background-color: bisque;
+}
+
+.notlinked > .icon_img:hover{
+    background-color: rgba(var(--blue-rgba-300), 0.64);
+}
+
+.notlinked > label:hover{
+    color: var(--branco);
 }
 
 hr{

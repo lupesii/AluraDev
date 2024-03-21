@@ -1,0 +1,8 @@
+#buMenu:hover{
+    background-color: rgba(var(--blue-rgba-300), 0.08);
+    border-radius: var(--border-radius);
+}
+
+#buMenu:active{
+    background-color: rgba(var(--blue-rgba-300), 0.16);
+}

@@ -1,0 +1,23 @@
+input:not([type="color"]), .input{
+    background-color: var(--cinza);
+    color: var(--branco);
+    border: none;
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    padding: 1rem;
+    outline: none;
+    resize: none;
+}
+
+input[type="color"]{
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    border-radius: calc(var(--border-radius) / 4);
+    padding: .2rem;
+    width: 100%;
+    height: 3.5rem;
+}
+
+input:not([type="color"]):hover, .input:hover{
+    background-color: rgba(var(--white-rgba), 0.24);
+}
