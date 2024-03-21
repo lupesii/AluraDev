@@ -41,26 +41,58 @@
             </a>
         </nav>
 
-        <!-- teste: O menu para mobile só irá exibir todos os itens se a página tiver mais conteúdos -->
+        <div class="area-projetos-criados">
+            <div class="projeto-criado">
+                <div class="editorContainer" id="editorContainer">
+                    <code class="code_editor code_editor-comunidade" contenteditable="true" aria-label="editor">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
-        <!-- <section>
-            <h1>Testes</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa omnis commodi inventore nesciunt quae optio alias, modi corporis nostrum. Dignissimos ex ut reprehenderit eveniet a expedita, dolorem earum voluptatibus!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa omnis commodi inventore nesciunt quae optio alias, modi corporis nostrum. Dignissimos ex ut reprehenderit eveniet a expedita, dolorem earum voluptatibus!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa omnis commodi inventore nesciunt quae optio alias, modi corporis nostrum. Dignissimos ex ut reprehenderit eveniet a expedita, dolorem earum voluptatibus!
-                
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa omnis commodi inventore nesciunt quae optio alias, modi corporis nostrum. Dignissimos ex ut reprehenderit eveniet a expedita, dolorem earum voluptatibus!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa omnis commodi inventore nesciunt quae optio alias, modi corporis nostrum. Dignissimos ex ut reprehenderit eveniet a expedita, dolorem earum voluptatibus!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa omnis commodi inventore nesciunt quae optio alias, modi corporis nostrum. Dignissimos ex ut reprehenderit eveniet a expedita, dolorem earum voluptatibus!
-                
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa omnis commodi inventore nesciunt quae optio alias, modi corporis nostrum. Dignissimos ex ut reprehenderit eveniet a expedita, dolorem earum voluptatibus!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa omnis commodi inventore nesciunt quae optio alias, modi corporis nostrum. Dignissimos ex ut reprehenderit eveniet a expedita, dolorem earum voluptatibus!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa omnis commodi inventore nesciunt quae optio alias, modi corporis nostrum. Dignissimos ex ut reprehenderit eveniet a expedita, dolorem earum voluptatibus!
-                
-            </p>
-        </section> -->
+                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                        
+                        const unfold = (f, seed) => {
+                          const go = (f, seed, acc) => {
+                            const res = f(seed)
+                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                          }
+                          return go(f, seed, [])
+                        }
+                    </code>
+                    <div class="dots">
+                        <span class="dot dot--red"></span>
+                        <span class="dot dot--yellow"></span>
+                        <span class="dot dot--green"></span>
+                    </div>
+                    
+                </div>
+                <div class="projeto__descricao">
+                    <h1 class="projeto__titulo-do-projeto">Titulo do projeto</h1>
+                    <p class="projeto__descricao-do-projeto">
+                        Essa é a descrição do meu projeto
+                    </p>
+                </div>
+                <div class="projeto__interacao">
+                    <div class="projeto__interacao-itens">
+                        <div class="projeto__interacao-itens-item">
+                            <img src="../assets/icone-coments.svg" alt="Ícone comentario">
+                            <p>
+                                10
+                            </p>
+                        </div>
+                        <div class="projeto__interacao-itens-item">
+                            <img src="../assets/icone-likes.svg" alt="Ícone likes">
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="projeto__interacao-usuario">
+                        <img src="" alt="">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="../script/menu.js"></script>

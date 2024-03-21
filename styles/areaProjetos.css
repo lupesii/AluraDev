@@ -1,0 +1,23 @@
+.area-projetos-criados{}
+.projeto-criado{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #00000029;
+    border-radius: 8px;
+}
+.projeto-criado .editorContainer{
+    border-radius: 8px;
+}
+.projeto__descricao{}
+.projeto__titulo-do-projeto{}
+.projeto__descricao-do-projeto{}
+.projeto__interacao{}
+.projeto__interacao-itens{}
+.projeto__interacao-itens-item{}
+.projeto__interacao-itens-item img{}
+.projeto__interacao-itens-item p{}
+.projeto__interacao-usuario{}
+.projeto__interacao-usuario img{}
+.projeto__interacao-usuario p{}
+

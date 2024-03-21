@@ -1,6 +1,7 @@
 @import url(editor.css);
 @import url(projeto.css);
 @import url(menu.css);
+@import url(areaProjetos.css);
 
 :root{
     --branco: white;
@@ -20,6 +21,7 @@
     --font-principal: "Inter", sans-serif;
     --font-secundaria: "Roboto Mono", monospace;
 }
+
 
 *{
     box-sizing: border-box;
