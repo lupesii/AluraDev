@@ -60,6 +60,10 @@
     gap: 10px;
     margin-bottom: 1rem;
 }
+.btn-ativo:hover{
+    background-color: var(--cor-btn-ativo-hover);
+    border-radius: var(--border-radius);
+}
 
 .icon_img{
     padding: 10px;

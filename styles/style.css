@@ -1,4 +1,7 @@
-@import url(editor.css); @import url(projeto.css); @import url(menu.css); @import url(buttons.css); @import url(input.css); @import url(icon.css);
+@import url(editor.css);
+@import url(projeto.css);
+@import url(menu.css);
+@import url(areaProjetos.css);
 
 :root{
     --branco: white;
@@ -20,6 +23,10 @@
 
     --white-rgba: 255, 255, 255;
 
+    --cor-botao: #5081FB14;
+    --cor-botao2: #5081FB;
+    --cor-btn-inativo-hover: #5081FB29;
+    --cor-btn-ativo-hover: #7BA4FC;
     --mac-red: #FF5F56;
     --mac-yellow: #FFBD2E;
     --mac-green: #27C93F;
@@ -31,6 +38,7 @@
     --font-principal: "Inter", sans-serif;
     --font-secundaria: "Roboto Mono", monospace;
 }
+
 
 *{
     box-sizing: border-box;

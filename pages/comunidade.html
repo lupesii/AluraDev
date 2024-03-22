@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Comunidade | AluraDev</title>
+</head>
+<body>
+    <header class="header">
+        <img src="../assets/Logo.svg">
+        <input class="header_search" type="search" placeholder="Busque por algo" clear="false">
+        <div class="header_icons">
+            <img src="../assets/Lupa.svg" id="iconSearch">
+            <img src="../assets/Menu.svg" id="buMenu">
+        </div>
+        <a target="_blank" class="menu_link header_perfil" href="https://github.com/lupesii">
+            <img id="foto" src="../assets/Photo.svg">
+            <label for="foto">Lucas</label>
+        </a>
+    </header>
+
+    <main class="mainContainer">
+        <nav class="menu" id="menu">
+            <h1>MENU</h1>
+            <a href="../index.html" class="menu_link btn-inativo">
+                <img src="../assets/icone-editor-desactive.svg" alt="Editor de Código">
+                <p>Editor de código</p>
+            </a>
+        
+            <a href="#" class="menu_link btn-ativo">
+                <img src="../assets/icone-comunidade-active.svg" alt="Comunidade">
+                <p>Comunidade</p>
+            </a>
+
+            <hr>
+                
+            <a target="_blank" class="menu_link menu_user" href="https://github.com/lupesii">
+                <img id="foto" src="../assets/Photo.svg">
+                <label for="foto">Lucas</label>
+            </a>
+        </nav>
+
+        <div class="area-projetos-criados">
+            <div class="projeto-criado">
+                <div class="editorContainer" id="editorContainer">
+                    <code class="code_editor code_editor-comunidade" contenteditable="true" aria-label="editor">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                        
+                        const unfold = (f, seed) => {
+                          const go = (f, seed, acc) => {
+                            const res = f(seed)
+                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                          }
+                          return go(f, seed, [])
+                        }
+                    </code>
+                    <div class="dots">
+                        <span class="dot dot--red"></span>
+                        <span class="dot dot--yellow"></span>
+                        <span class="dot dot--green"></span>
+                    </div>
+                    
+                </div>
+                <div class="projeto__descricao">
+                    <h1 class="projeto__titulo-do-projeto">Titulo do projeto</h1>
+                    <p class="projeto__descricao-do-projeto">
+                        Essa é a descrição do meu projeto
+                    </p>
+                </div>
+                <div class="projeto__interacao">
+                    <div class="projeto__interacao-itens">
+                        <div class="projeto__interacao-itens-item">
+                            <img src="../assets/icone-coments.svg" alt="Ícone comentario">
+                            <p>
+                                10
+                            </p>
+                        </div>
+                        <div class="projeto__interacao-itens-item">
+                            <img src="../assets/icone-likes.svg" alt="Ícone likes">
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="projeto__interacao-usuario">
+                        <img src="" alt="">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../script/menu.js"></script>
+</body>
+</html>
