@@ -1,6 +1,9 @@
 @import url(editor.css);
 @import url(projeto.css);
 @import url(menu.css);
+@import url(input.css);
+@import url(icon.css);
+@import url(buttons.css);
 @import url(areaProjetos.css);
 
 :root{
