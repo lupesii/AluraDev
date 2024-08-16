@@ -1,23 +1,62 @@
-.area-projetos-criados{}
-.projeto-criado{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: #00000029;
-    border-radius: 8px;
+.area-cards {
+  width: 70vw;
 }
-.projeto-criado .editorContainer{
-    border-radius: 8px;
-}
-.projeto__descricao{}
-.projeto__titulo-do-projeto{}
-.projeto__descricao-do-projeto{}
-.projeto__interacao{}
-.projeto__interacao-itens{}
-.projeto__interacao-itens-item{}
-.projeto__interacao-itens-item img{}
-.projeto__interacao-itens-item p{}
-.projeto__interacao-usuario{}
-.projeto__interacao-usuario img{}
-.projeto__interacao-usuario p{}
 
+.card-projeto {
+  width: 45%;
+  float: left;
+
+  margin: 0 calc(5%) 50px 0;
+}
+
+.card-projeto .editorContainer {
+  border-radius: 8px;
+}
+
+.card-projeto code {
+  max-height: 100px;
+}
+
+.card-projeto:hover .card__interacao {
+  padding: 0 24px 24px;
+  height: auto;
+  opacity: 1;
+}
+
+.card__content {
+  background-color: #00000029;
+  border-radius: 8px;
+}
+
+.card__descricao {
+  padding: 24px;
+}
+
+.card__interacao {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+
+  transition: all 0.4s cubic-bezier(0.42, -0.43, 0.51, 1.47);
+}
+
+.card__titulo {
+  font: normal 700 1.3rem var(--font-principal);
+  margin-bottom: 20px;
+}
+
+.card__descricao p {
+  font: normal 400 1rem var(--font-principal);
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.card__interacao {
+  display: flex;
+  gap: 20px;
+}
+
+.card__interacao-item {
+  display: flex;
+  gap: 10px;
+}

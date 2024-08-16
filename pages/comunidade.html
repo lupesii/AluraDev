@@ -1,100 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <title>Comunidade | AluraDev</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <img src="../assets/Logo.svg">
-        <input class="header_search" type="search" placeholder="Busque por algo" clear="false">
-        <div class="header_icons">
-            <img src="../assets/Lupa.svg" id="iconSearch">
-            <img src="../assets/Menu.svg" id="buMenu">
-        </div>
-        <a target="_blank" class="menu_link header_perfil" href="https://github.com/lupesii">
-            <img id="foto" src="../assets/Photo.svg">
-            <label for="foto">Lucas</label>
-        </a>
+      <img src="../assets/Logo.svg" />
+      <input
+        class="header_search"
+        type="search"
+        placeholder="Busque por algo"
+        clear="false"
+      />
+      <div class="header_icons">
+        <img src="../assets/Lupa.svg" id="iconSearch" />
+        <img src="../assets/Menu.svg" id="buMenu" />
+      </div>
+      <a
+        target="_blank"
+        class="menu_link header_perfil"
+        href="https://github.com/lupesii"
+      >
+        <img id="foto" src="../assets/Photo.png" />
+        <label for="foto">Lucas</label>
+      </a>
     </header>
 
     <main class="mainContainer">
-        <nav class="menu" id="menu">
-            <h1>MENU</h1>
-            <a href="../index.html" class="menu_link btn-inativo">
-                <img src="../assets/icone-editor-desactive.svg" alt="Editor de Código">
-                <p>Editor de código</p>
-            </a>
-        
-            <a href="#" class="menu_link btn-ativo">
-                <img src="../assets/icone-comunidade-active.svg" alt="Comunidade">
-                <p>Comunidade</p>
-            </a>
+      <nav class="menu" id="menu">
+        <h1>MENU</h1>
+        <a href="../index.html" class="menu_link notlinked">
+          <img
+            id="img-editor"
+            class="icon_img --linked"
+            src="../assets/Icone-Editor.svg"
+            alt="Editor de Código"
+          />
+          <label>Editor de código</label>
+        </a>
 
-            <hr>
-                
-            <a target="_blank" class="menu_link menu_user" href="https://github.com/lupesii">
-                <img id="foto" src="../assets/Photo.svg">
-                <label for="foto">Lucas</label>
-            </a>
-        </nav>
+        <a href="../pages/comunidade.html" class="menu_link linked">
+          <img
+            id="img-comunidade"
+            class="icon_img"
+            src="../assets/Icone-Comunidade.svg"
+            alt="Comunidade"
+          />
+          <label for="img-comunidade">Comunidade</label>
+        </a>
 
-        <div class="area-projetos-criados">
-            <div class="projeto-criado">
-                <div class="editorContainer" id="editorContainer">
-                    <code class="code_editor code_editor-comunidade" contenteditable="true" aria-label="editor">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+        <hr />
 
-                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                        
-                        const unfold = (f, seed) => {
-                          const go = (f, seed, acc) => {
-                            const res = f(seed)
-                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                          }
-                          return go(f, seed, [])
-                        }
-                    </code>
-                    <div class="dots">
-                        <span class="dot dot--red"></span>
-                        <span class="dot dot--yellow"></span>
-                        <span class="dot dot--green"></span>
-                    </div>
-                    
-                </div>
-                <div class="projeto__descricao">
-                    <h1 class="projeto__titulo-do-projeto">Titulo do projeto</h1>
-                    <p class="projeto__descricao-do-projeto">
-                        Essa é a descrição do meu projeto
-                    </p>
-                </div>
-                <div class="projeto__interacao">
-                    <div class="projeto__interacao-itens">
-                        <div class="projeto__interacao-itens-item">
-                            <img src="../assets/icone-coments.svg" alt="Ícone comentario">
-                            <p>
-                                10
-                            </p>
-                        </div>
-                        <div class="projeto__interacao-itens-item">
-                            <img src="../assets/icone-likes.svg" alt="Ícone likes">
-                            <p>
+        <a
+          target="_blank"
+          class="menu_link menu_user"
+          href="https://github.com/lupesii"
+        >
+          <img id="foto" src="../assets/Photo.png" />
+          <label for="foto">Lucas</label>
+        </a>
+      </nav>
 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="projeto__interacao-usuario">
-                        <img src="" alt="">
-                        <p>
-                            
-                        </p>
-                    </div>
-                </div>
+      <ul class="area-cards">
+        <li class="card-projeto">
+          <section class="editorContainer" id="editorContainer">
+            <code
+              class="code_editor"
+              contenteditable="false"
+              aria-label="editor"
+            ></code>
+            <div class="dots">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
             </div>
-        </div>
+          </section>
+
+          <section class="card__content">
+            <div class="card__descricao">
+              <h1 class="card__titulo">Titulo do card</h1>
+              <p class="card__descricao">Essa é a descrição do meu card</p>
+            </div>
+
+            <div class="card__interacao">
+              <div class="card__interacao-item">
+                <img src="../assets/icone-coments.svg" alt="Ícone comentario" />
+                <p>10</p>
+              </div>
+              <div class="card__interacao-item">
+                <img src="../assets/icone-likes.svg" alt="Ícone likes" />
+                <p>10</p>
+              </div>
+              <div class="card__interacao-item">
+                <img src="" alt="" />
+                <p></p>
+              </div>
+            </div>
+          </section>
+        </li>
+      </ul>
     </main>
 
     <script src="../script/menu.js"></script>
-</body>
+  </body>
 </html>

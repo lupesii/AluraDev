@@ -1,90 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/dracula.css">
-    <link rel="stylesheet" href="styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/dracula.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Alura Dev</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <img src="assets/Logo.svg">
-        <input class="header_search" type="search" placeholder="Busque por algo" clear="false">
-        <div class="header_icons">
-            <img src="assets/Lupa.svg" id="iconSearch">
-            <img src="assets/Menu.svg" id="buMenu">
-        </div>
-        <a target="_blank" class="menu_link header_perfil" href="https://github.com/lupesii">
-            <img id="foto" src="assets/Photo.png">
-            <label for="foto">Lucas</label>
-        </a>
+      <img src="assets/Logo.svg" />
+      <input
+        class="header_search"
+        type="search"
+        placeholder="Busque por algo"
+        clear="false"
+      />
+      <div class="header_icons">
+        <img src="assets/Lupa.svg" id="iconSearch" />
+        <img src="assets/Menu.svg" id="buMenu" />
+      </div>
+      <a
+        target="_blank"
+        class="menu_link header_perfil"
+        href="https://github.com/lupesii"
+      >
+        <img id="foto" src="assets/Photo.png" />
+        <label for="foto">Lucas</label>
+      </a>
     </header>
 
     <main class="mainContainer">
-        <nav class="menu" id="menu">
-            <h1>MENU</h1>
-            <a href="index.html" class="menu_link linked">
-                <img id="img-editor" class="icon_img --linked" src="assets/Icone-Editor.svg" alt="Editor de Código">
-                <label>Editor de código</label>
-            </a>
-        
-            <a href="pages/comunidade.html" class="menu_link notlinked">
-                <img id="img-comunidade" class="icon_img" src="assets/Icone-Comunidade.svg" alt="Comunidade">
-                <label>Comunidade</label>
-            </a>
+      <nav class="menu" id="menu">
+        <h1>MENU</h1>
+        <a href="index.html" class="menu_link linked">
+          <img
+            id="img-editor"
+            class="icon_img --linked"
+            src="assets/Icone-Editor.svg"
+            alt="Editor de Código"
+          />
+          <label>Editor de código</label>
+        </a>
 
-            <hr>
-                
-            <a target="_blank" class="menu_link menu_user" href="https://github.com/lupesii">
-                <img id="foto" src="assets/Photo.png">
-                <label for="foto">Lucas</label>
-            </a>
-        </nav>
+        <a href="pages/comunidade.html" class="menu_link notlinked">
+          <img
+            id="img-comunidade"
+            class="icon_img"
+            src="assets/Icone-Comunidade.svg"
+            alt="Comunidade"
+          />
+          <label for="img-comunidade">Comunidade</label>
+        </a>
 
-        <div class="search-bar" id="searchBar">
-            <input type="search" placeholder="Busque por algo" clear="false">
-            <button class="close_button" id="closeSearch"><img src="assets/Close.svg"></button>
+        <hr />
+
+        <a
+          target="_blank"
+          class="menu_link menu_user"
+          href="https://github.com/lupesii"
+        >
+          <img id="foto" src="assets/Photo.png" />
+          <label for="foto">Lucas</label>
+        </a>
+      </nav>
+
+      <div class="search-bar" id="searchBar">
+        <input type="search" placeholder="Busque por algo" clear="false" />
+        <button class="close_button" id="closeSearch">
+          <img src="assets/Close.svg" />
+        </button>
+      </div>
+
+      <section class="editor">
+        <div class="editorContainer" id="editorContainer">
+          <code
+            class="code_editor"
+            contenteditable="true"
+            aria-label="editor"
+          ></code>
+          <div class="dots">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+          </div>
+        </div>
+        <button id="btnHljs" class="button editor_button">
+          Vizualizar com o highlight
+        </button>
+      </section>
+
+      <aside class="projeto">
+        <div class="projeto_info">
+          <h1>SEU PROJETO</h1>
+          <input type="text" id="nomeProje" placeholder="Nome do seu projeto" />
+          <textarea
+            class="input"
+            id="descProje"
+            cols="30"
+            rows="5"
+            placeholder="Descrição do seu projeto"
+          ></textarea>
         </div>
 
-        <section class="editor">
-            <div class="editorContainer" id="editorContainer">
-                <code class="code_editor" contenteditable="true" aria-label="editor"></code>
-                <div class="dots">
-                    <span class="dot dot--red"></span>
-                    <span class="dot dot--yellow"></span>
-                    <span class="dot dot--green"></span>
-                </div>
-            </div>
-            <button id="btnHljs" class="button editor_button">Vizualizar com o highlight</button>
-        </section>
-
-        <aside class="projeto">
-            <div class="projeto_info">
-                <h1>SEU PROJETO</h1>
-                <input type="text" id="nomeProje" placeholder="Nome do seu projeto">
-                <textarea class="input" id="descProje" cols="30" rows="5" placeholder="Descrição do seu projeto"></textarea>
-            </div>
-
-            <div class="projeto_setting">
-                <h1>PERSONALIZAÇÃO</h1>
-                <div class="setting">
-                    <select class="input" id="editorLanguage">
-                        <option value="JavaScript">JavaScript</option>
-                        <option value="HTML">HTML</option>
-                        <option value="CSS">CSS</option>
-                    </select>
-                    <input type="color" id="editorColor" value="#6bd1ff">
-                </div>
-            </div>
-            <button class=" save_button button">Salvar Projeto</button>
-        </aside>
+        <div class="projeto_setting">
+          <h1>PERSONALIZAÇÃO</h1>
+          <div class="setting">
+            <select class="input" id="editorLanguage">
+              <option value="JavaScript">JavaScript</option>
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+            </select>
+            <input type="color" id="editorColor" value="#6bd1ff" />
+          </div>
+        </div>
+        <button class="save_button button">Salvar Projeto</button>
+      </aside>
     </main>
 
-    
     <script src="script/menu.js"></script>
     <script src="script/corDoEditor.js"></script>
     <script src="script/HighLight.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
-</body>
+  </body>
 </html>

@@ -1,10 +1,9 @@
-const openSearch = document.getElementById('iconSearch');
-const closeSearch = document.getElementById('closeSearch');
-const searchBar = document.getElementById('searchBar');
+const openSearch = document.getElementById("iconSearch");
+const closeSearch = document.getElementById("closeSearch");
+const searchBar = document.getElementById("searchBar");
 
-const buttonMenu = document.getElementById('buMenu');
-const menu = document.getElementById('menu');
-
+const buttonMenu = document.getElementById("buMenu");
+const menu = document.getElementById("menu");
 
 // openSearch.onclick = function(){
 //     searchBar.classList.add("is-visible");
@@ -15,7 +14,6 @@ const menu = document.getElementById('menu');
 // }
 // COMENTEI PORQUE ESTAVA DANDO ERRO NA PÁGINA COMUNIDADE
 
-buttonMenu.onclick = function(){
-    menu.classList.toggle("is-open");
-}
-
+buttonMenu.onclick = function () {
+  menu.classList.toggle("is-open");
+};
